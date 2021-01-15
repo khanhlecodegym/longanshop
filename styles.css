@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 3%;
+}
+
+.content_search {
+	display: flex;
+}
+
+.content_search .product_id {
+	flex: 1;
+}
+
+.content_search .product_name {
+	flex: 3;
+}
+
+.content_search .product_price {
+	flex: 1;
+}
+
+.name_shop {
+	font-size: 50px;
+	text-align: center;
+}
+
+.header_search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#productSearch {
+	border-radius: 5px;
+	outline: none;
+	margin-left: 10px;
+}
+
+.content_search {
+	border: solid 1px teal;
+}
