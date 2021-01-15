@@ -29,7 +29,7 @@ str_content_product = getStrContentProduct(products);
 displayProduct(str_content_product);
 
 productSearch.addEventListener('keyup', function() {
-	let product_name = productSearch.value.trim();
+	let product_name = productSearch.value.trim().toLowerCase();
 	if(product_name === "") {
 		str_content_product = getStrContentProduct(products);
 		displayProduct(str_content_product);
@@ -38,7 +38,7 @@ productSearch.addEventListener('keyup', function() {
 	let relust = [];
 
 	for (const product of products) {
-		if(product.name.includes(product_name)) {
+		if(product.name.toLowerCase().includes(product_name)) {
 			relust.push(product);
 		}
 	}
